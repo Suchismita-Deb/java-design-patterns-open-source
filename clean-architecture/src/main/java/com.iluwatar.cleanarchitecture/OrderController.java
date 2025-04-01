@@ -1,4 +1,4 @@
-package com.iluwatar.cleanArchitecture;
+package com.iluwatar.cleanarchitecture;
 
 public class OrderController{
   private final ShoppingCartService shoppingCartUseCase;
@@ -6,6 +6,7 @@ public class OrderController{
   public OrderController(ShoppingCartService shoppingCartUseCase) {
     this.shoppingCartUseCase = shoppingCartUseCase;
   }
+
 
   public Order checkout(String userId) {
     return shoppingCartUseCase.checkout(userId);

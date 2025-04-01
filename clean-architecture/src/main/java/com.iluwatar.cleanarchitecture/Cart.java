@@ -1,5 +1,8 @@
-package com.iluwatar.cleanArchitecture;
+package com.iluwatar.cleanarchitecture;
 
+import lombok.Getter;
+
+@Getter
 public class Cart {
   private Product product;
   private int quantity;
@@ -11,13 +14,6 @@ public class Cart {
 
   public double getTotalPrice() {
     return product.getPrice() * quantity;
-  }
-  public Product getProduct() {
-    return product;
-  }
-
-  public int getQuantity() {
-    return quantity;
   }
 
 }
